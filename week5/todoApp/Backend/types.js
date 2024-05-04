@@ -10,3 +10,8 @@ const updateTodoSchema = zod.object({
     title: zod.string().optional(),
     description: zod.string().optional(),
 });
+
+module.exports = {
+    createTodoSchema: createTodoSchema,
+    updateTodoSchema: updateTodoSchema
+};
