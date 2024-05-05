@@ -6,12 +6,12 @@ import {CreateTodo} from './Components/CreateTodo'
 import { Todos } from './Components/Todos'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [todos, settodos] = useState([]);
 
   return (
     <>
     <CreateTodo />
-    <Todos />
+    <Todos todos={todos}/>
     </>
   )
 }
